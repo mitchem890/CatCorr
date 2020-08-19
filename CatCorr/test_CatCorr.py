@@ -2,7 +2,7 @@ import pytest
 import CatCorrFunc
 
 
-@pytest.mark.parametrize("stringList",[(["MyFile.txt", "MyFile.exe"])])
+@pytest.mark.parametrize("stringList", [(["MyFile.txt", "MyFile.exe"])])
 def test_longest_substring_finder(stringList):
     assert CatCorrFunc.longest_substring_finder(stringList) == "MyFile."
 
@@ -17,22 +17,22 @@ def test_get_parcellation(string):
     assert CatCorrFunc.get_parcellation(string) == "parcellation-MyParcellation"
     return
 
-
-def test_append(filelist, outfile):
-
-    return
-
-
-def test_transpose(filename):
-
-    return
-
-
-def test_correlate(filename, outfile):
-
-    return
-
-
-def test_add_net_header(filename, num_of_parcels):
-
-    return
+##TODO Fill out File io tests
+# def test_append(filelist, outfile):
+#
+#     return
+#
+#
+# def test_transpose(filename):
+#
+#     return
+#
+#
+# def test_correlate(filename, outfile):
+#
+#     return
+#
+#
+# def test_add_net_header(filename, num_of_parcels):
+#
+#     return
